@@ -86,18 +86,18 @@ public class Book {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Book book = (Book) o;
-        return Objects.equals(Id, book.Id);
+        return Objects.equals(id, book.id);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(Id);
+        return Objects.hash(id);
     }
 
     @Override
     public String toString() {
         return "Book{" +
-                "Id=" + Id +
+                "Id=" + id +
                 ", title='" + title + '\'' +
                 ", isbn='" + isbn + '\'' +
                 ", publisher='" + publisher + '\'' +
